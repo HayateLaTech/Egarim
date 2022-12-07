@@ -1,0 +1,7 @@
+{
+  "version": "0.0.80",
+  "name": "Egarim",
+  "dependencies": {
+    "slash-create": "^5.9.0"
+  }
+}
