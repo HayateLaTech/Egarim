@@ -1,15 +1,42 @@
-# /create with Bun runtime
+# Nuxt 3 Minimal Starter
 
-A [slash-create](https://npm.im/slash-create) template, using [Bun runtime](https://bun.sh).
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Getting Started
+## Setup
 
-### Cloning the repo
+Make sure to install the dependencies:
 
-```sh
-bun create discord-interactions interactions-bot
+```bash
+# yarn
+yarn install
+
+# npm
+npm install
+
+# pnpm
+pnpm install --shamefully-hoist
 ```
 
-### Development
+## Development Server
 
-To run this locally, rename `.env.example` to `.env` and fill in the variables, then run `bun run.js` to start a local dev environment and use something similar to [ngrok](https://ngrok.com/) or [cloudflare](https://www.cloudflare.com/) to tunnel it to a URL.
+Start the development server on http://localhost:3000
+
+```bash
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
