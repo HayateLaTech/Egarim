@@ -5,10 +5,14 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "migrate:up": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo"
   },
   "devDependencies": {
-    "nuxt": "3.0.0"
+    "@sidebase/nuxt-auth": "^0.3.0",
+    "nuxt": "3.0.0",
+    "sequelize-cli": "^6.5.2"
   },
   "dependencies": {
     "@iconify/json": "^2.1.150",
@@ -17,7 +21,9 @@
     "@unocss/nuxt": "^0.47.5",
     "@unocss/preset-icons": "^0.47.5",
     "bootstrap": "^5.2.3",
+    "mysql2": "^2.3.3",
     "sass": "^1.56.2",
-    "sass-loader": "^13.2.0"
+    "sass-loader": "^13.2.0",
+    "sequelize": "^6.28.0"
   }
 }
