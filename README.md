@@ -1,42 +1,33 @@
-# Nuxt 3 Minimal Starter
+# 😈 Egarim!
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Just a smol Project for a fun Community!
 
-## Setup
+This is ⚠️ **explorative** ⚠️ code! Be aware that code from here likely suffers from a safety & security standpoint.
 
-Make sure to install the dependencies:
+# Dev Setup
 
-```bash
-# yarn
-yarn install
+Thanks to 🐟 Docker ⛵ we can sail the high seas without any issues!
 
-# npm
-npm install
+In order to make it work, you'll have to setup your own **.env** file, which will contain things like the tokens for your Discord oAuth2 Application 😉
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+## 📁 Create your own .env File
 
-## Development Server
+1. copy the **.env.example** file and create a new file called **.env** in the root of the project
+2. edit the **.env** file so that all settings are set up correctly
+3. 👍 you're done~! Congrats 😸
 
-Start the development server on http://localhost:3000
+Here's a little help for all the keys and what they mean:
 
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+|  Key   |  Description    |
+|--------|-----------------|
+|  NUXT_SECRET  |  .. for decryption things  |
+|  ORIGIN       |  .. for oauth2 redirection url generation  |
+|  DISCORD_CLIENT  |  Client ID of your Discord Application  |
+|  DISCORD_SECRET  |  The Secret of it  |
+|  DB_CONNECTION   |  which db-driver to use (just use mysql)  |
+|  DB_HOST         |  The DB Host (when using docker it's the name of the db container)  |
+|  DB_PORT         |  ..  |
+|  DB_DATABASE     |  The name of the DB Database  |
+|  DB_USERNAME     |  Username of the DB User that'll access all app Data etc.  |
+|  DB_PASSWORD     |  Password of the DB User that'll access all the app Data etc.  |
+|  NODE_ENV        |  Settings this enables / deactivates debugging thingies etc.  |
