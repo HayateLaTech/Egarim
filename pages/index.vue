@@ -4,7 +4,7 @@ definePageMeta({
   auth: false
 });
 
-const { data, status, getCsrfToken, getProviders, signIn } = useSession()
+const { data, status, getCsrfToken, getProviders, signIn, signOut } = useSession()
 
 const providers = await getProviders()
 const csrfToken = await getCsrfToken()
@@ -17,6 +17,7 @@ const csrfToken = await getCsrfToken()
         <p v-if="data">{{ data }}</p>
         <img :src="data.user.image" alt="Profile Picture" class="rounded" v-if="data">
         <button class="btn btn-primary" v-if="status !== 'authenticated'" v-on:click="signIn()">Login</button>
+        <button class="btn btn-primary" v-if="status === 'authenticated'" v-on:click="signOut()">Logout</button>
     </div>
 </template>
 

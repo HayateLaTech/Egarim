@@ -10,4 +10,13 @@ export default NuxtAuthHandler({
             clientSecret: process.env.DISCORD_SECRET,
         })
     ],
+    callbacks: {
+        async signIn({ user, account, profile, email, credentials }) {
+            const nuxtApp = useNuxtApp()
+
+            console.log(user, account, profile, email, credentials)
+
+            return true
+        }
+    }
 })
