@@ -31,3 +31,24 @@ Here's a little help for all the keys and what they mean:
 |  DB_USERNAME     |  Username of the DB User that'll access all app Data etc.  |
 |  DB_PASSWORD     |  Password of the DB User that'll access all the app Data etc.  |
 |  NODE_ENV        |  Settings this enables / deactivates debugging thingies etc.  |
+
+## 📖 Setup the Database Connection
+
+In order to use sequalize migrations, you'll need to setup the config for it! :3 
+
+1. copy the **/config/config.json.example** file and create a new one in the same folder called **config.json**
+2. for development you should be able to use the pre-set values in the example file (remember to use `mysql` as the database connection - the docker service name)
+
+[Sequalize Migration Documentation](https://sequelize.org/docs/v6/other-topics/migrations/#running-migrations)
+
+## ⚙️ Convenient Make-Commands
+
+`make start`    ▶️   starts the docker container
+
+`make stop`     ▶️   stops the docker container
+
+`make migrate`  ▶️   starts migrations (located in migrations folder)
+
+`make undo`     ▶️   reverts the last migration action
+
+`make reset`    ▶️   resets the database

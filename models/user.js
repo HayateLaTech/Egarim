@@ -14,6 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   User.init({
+    discord_id: { type: DataTypes.INTEGER, primaryKey: true},
     points: DataTypes.INTEGER
   }, {
     sequelize,

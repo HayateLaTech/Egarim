@@ -3,7 +3,7 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('Users', {
-      snowflake: {
+      discord_id: {
         allowNull: false,
         primaryKey: true,
         type: Sequelize.INTEGER
