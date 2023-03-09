@@ -41,5 +41,5 @@ export default defineNuxtConfig({
     auth: {
         enableGlobalAppMiddleware : true,
         origin: process.env.ORIGIN,
-    }
+    },
 })
